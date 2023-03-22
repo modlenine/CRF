@@ -2423,7 +2423,7 @@ class Main_model extends CI_Model
                 "crfex_report_date" => $report_date,
                 "crfex_report_month" => $report_month,
                 "crfex_report_year" => $report_year,
-                "crfex_topic" => "Add new customer."
+                "crfex_topic" => "Add new customer.",
             );
 
             $this->db->insert("crfex_customers_temp", $arcustomer);
@@ -2546,7 +2546,16 @@ class Main_model extends CI_Model
                         "crfex_report_month" => $report_month,
                         "crfex_report_year" => $report_year,
                         "crfex_topic" => "Current customer",
-                        "crfex_curcustopic1" => "Change customer information."
+                        "crfex_curcustopic1" => "Change customer information.",
+                        "crfex_m3_text" => $this->input->post("crfex_his_month3"),
+                        "crfex_m3_volume" => $this->input->post("crfex_his_tvolume3"),
+                        "crfex_m3_sales" => $this->input->post("crfex_histsales3"),
+                        "crfex_m2_text" => $this->input->post("crfex_his_month2"),
+                        "crfex_m2_volume" => $this->input->post("crfex_his_tvolume2"),
+                        "crfex_m2_sales" => $this->input->post("crfex_histsales2"),
+                        "crfex_m1_text" => $this->input->post("crfex_his_month1"),
+                        "crfex_m1_volume" => $this->input->post("crfex_his_tvolume1"),
+                        "crfex_m1_sales" => $this->input->post("crfex_histsales1"),
                     );
 
                     if (getFormBeforeSaveEx($getFormNo) > 0) {
@@ -2601,7 +2610,16 @@ class Main_model extends CI_Model
                             "crfex_report_month" => $report_month,
                             "crfex_report_year" => $report_year,
                             "crfex_topic" => "Current customer",
-                            "crfex_curcustopic2" => "Change credit & term."
+                            "crfex_curcustopic2" => "Change credit & term.",
+                            "crfex_m3_text" => $this->input->post("crfex_his_month3"),
+                            "crfex_m3_volume" => $this->input->post("crfex_his_tvolume3"),
+                            "crfex_m3_sales" => $this->input->post("crfex_histsales3"),
+                            "crfex_m2_text" => $this->input->post("crfex_his_month2"),
+                            "crfex_m2_volume" => $this->input->post("crfex_his_tvolume2"),
+                            "crfex_m2_sales" => $this->input->post("crfex_histsales2"),
+                            "crfex_m1_text" => $this->input->post("crfex_his_month1"),
+                            "crfex_m1_volume" => $this->input->post("crfex_his_tvolume1"),
+                            "crfex_m1_sales" => $this->input->post("crfex_histsales1"),
                         );
 
                         if (getFormBeforeSaveEx($getFormNo) > 0) {
@@ -3716,12 +3734,15 @@ class Main_model extends CI_Model
                     "crfexcus_term" => $this->input->post("crfex_term"),
                     "crfexcus_discount" => $this->input->post("crfex_discount"),
                     "crfexcus_bg" => $this->input->post("crfex_combg"),
+
                     "crfexcus_his_month1" => $this->input->post("crfex_his_month1"),
                     "crfexcus_his_tvolume1" => $this->input->post("crfex_his_tvolume1"),
                     "crfexcus_histsales1" => $this->input->post("crfex_histsales1"),
+
                     "crfexcus_his_month2" => $this->input->post("crfex_his_month2"),
                     "crfexcus_his_tvolume2" => $this->input->post("crfex_his_tvolume2"),
                     "crfexcus_histsales2" => $this->input->post("crfex_histsales2"),
+
                     "crfexcus_his_month3" => $this->input->post("crfex_his_month3"),
                     "crfexcus_his_tvolume3" => $this->input->post("crfex_his_tvolume3"),
                     "crfexcus_histsales3" => $this->input->post("crfex_histsales3"),
@@ -3785,7 +3806,19 @@ class Main_model extends CI_Model
                         "crfex_curcustopic1" => $this->input->post("crfex_curcustopic1"),
                         "crfex_status" => "Edited",
                         "crfex_usermodify" => $this->input->post("crfex_usercreate"),
-                        "crfex_datetimemodify" => date("Y-m-d H:i:s")
+                        "crfex_datetimemodify" => date("Y-m-d H:i:s"),
+
+                        "crfex_m1_text" => $this->input->post("crfex_his_month1"),
+                        "crfex_m1_volume" => $this->input->post("crfex_his_tvolume1"),
+                        "crfex_m1_sales" => $this->input->post("crfex_histsales1"),
+
+                        "crfex_m2_text" => $this->input->post("crfex_his_month2"),
+                        "crfex_m2_volume" => $this->input->post("crfex_his_tvolume2"),
+                        "crfex_m2_sales" => $this->input->post("crfex_histsales2"),
+
+                        "crfex_m3_text" => $this->input->post("crfex_his_month3"),
+                        "crfex_m3_volume" => $this->input->post("crfex_his_tvolume3"),
+                        "crfex_m3_sales" => $this->input->post("crfex_histsales3"),
                     );
                     $this->db->where("crfex_id", $this->input->post("checkEditFormId"));
                     $this->db->update("crfex_maindata", $arUpdateToMain);

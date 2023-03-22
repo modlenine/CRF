@@ -113,6 +113,13 @@ a:hover{
     -webkit-overflow-scrolling: touch;
 }
 
+.crfexMainScroll{
+	max-height: 500px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 
 
 

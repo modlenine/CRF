@@ -68,15 +68,23 @@
 
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 crfexMainScroll">
 				<div class="" id="country_tableex"></div>
+			</div>
+			<div class="col-md-12 form-group">
 				<div align="center" class="mt-2">
 					<span>Total</span>&nbsp;<span id="countTotalex" class="p-3"></span>&nbsp;<span>list</span>
 				</div>
-				<div id="pagination_linkex"></div>
 			</div>
 
+			
+
 		</div>
+		<div class="row mt-2 d-flex justify-content-center">
+			<div id="pagination_linkex"></div>
+		</div>
+
+		
 	</div>
 
 </body>

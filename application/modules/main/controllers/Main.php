@@ -838,17 +838,17 @@ public function history_list()
             'get_area' => viewdataEX($crfexid)->crfex_company,
             'get_payment' => viewdataEX($crfexid)->crfexcus_payment,
 
-            'get_crfex_month1' => viewdataEX($crfexid)->crfexcus_his_month1,
-            'get_crfex_totalvolume1' => viewdataEX($crfexid)->crfexcus_his_tvolume1,
-            'get_crfex_totalsales1' => viewdataEX($crfexid)->crfexcus_histsales1,
+            'get_crfex_month1' => viewdataEX($crfexid)->crfex_m1_text,
+            'get_crfex_totalvolume1' => viewdataEX($crfexid)->crfex_m1_volume,
+            'get_crfex_totalsales1' => viewdataEX($crfexid)->crfex_m1_sales,
 
-            'get_crfex_month2' => viewdataEX($crfexid)->crfexcus_his_month2,
-            'get_crfex_totalvolume2' => viewdataEX($crfexid)->crfexcus_his_tvolume2,
-            'get_crfex_totalsales2' => viewdataEX($crfexid)->crfexcus_histsales2,
+            'get_crfex_month2' => viewdataEX($crfexid)->crfex_m2_text,
+            'get_crfex_totalvolume2' => viewdataEX($crfexid)->crfex_m2_volume,
+            'get_crfex_totalsales2' => viewdataEX($crfexid)->crfex_m2_sales,
 
-            'get_crfex_month3' => viewdataEX($crfexid)->crfexcus_his_month3,
-            'get_crfex_totalvolume3' => viewdataEX($crfexid)->crfexcus_his_tvolume3,
-            'get_crfex_totalsales3' => viewdataEX($crfexid)->crfexcus_histsales3,
+            'get_crfex_month3' => viewdataEX($crfexid)->crfex_m3_text,
+            'get_crfex_totalvolume3' => viewdataEX($crfexid)->crfex_m3_volume,
+            'get_crfex_totalsales3' => viewdataEX($crfexid)->crfex_m3_sales,
 
             'crfex_creditlimit_condition' => viewdataEx($crfexid)->crfex_creditlimit_condition,
             'crfex_term_condition' => viewdataEx($crfexid)->crfex_term_condition,
@@ -1142,17 +1142,17 @@ public function history_list()
             'edit-crfex_discount2' => viewdataEX($crfexid)->crfex_cdiscount,
             'edit-crfex_combg' => viewdataEX($crfexid)->crfexcus_bg,
 
-            'edit-crfex_his_month1' => viewdataEX($crfexid)->crfexcus_his_month1,
-            'edit-crfex_his_tvolume1' => viewdataEX($crfexid)->crfexcus_his_tvolume1,
-            'edit-crfex_histsales1' => viewdataEX($crfexid)->crfexcus_histsales1,
+            'edit-crfex_his_month1' => viewdataEX($crfexid)->crfex_m1_text,
+            'edit-crfex_his_tvolume1' => viewdataEX($crfexid)->crfex_m1_volume,
+            'edit-crfex_histsales1' => viewdataEX($crfexid)->crfex_m1_sales,
 
-            'edit-crfex_his_month2' => viewdataEX($crfexid)->crfexcus_his_month2,
-            'edit-crfex_his_tvolume2' => viewdataEX($crfexid)->crfexcus_his_tvolume2,
-            'edit-crfex_histsales2' => viewdataEX($crfexid)->crfexcus_histsales2,
+            'edit-crfex_his_month2' => viewdataEX($crfexid)->crfex_m2_text,
+            'edit-crfex_his_tvolume2' => viewdataEX($crfexid)->crfex_m2_volume,
+            'edit-crfex_histsales2' => viewdataEX($crfexid)->crfex_m2_sales,
 
-            'edit-crfex_his_month3' => viewdataEX($crfexid)->crfexcus_his_month3,
-            'edit-crfex_his_tvolume3' => viewdataEX($crfexid)->crfexcus_his_tvolume3,
-            'edit-crfex_histsales3' => viewdataEX($crfexid)->crfexcus_histsales3,
+            'edit-crfex_his_month3' => viewdataEX($crfexid)->crfex_m3_text,
+            'edit-crfex_his_tvolume3' => viewdataEX($crfexid)->crfex_m3_volume,
+            'edit-crfex_histsales3' => viewdataEX($crfexid)->crfex_m3_sales,
 
             'crfex_creditlimit_condition' => viewdataEx($crfexid)->crfex_creditlimit_condition,
             'crfex_term_condition' => viewdataEx($crfexid)->crfex_term_condition,
