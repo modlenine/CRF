@@ -120,7 +120,7 @@ $db['saleecolour'] = array(
 
 $db['pricemarkup'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.20.21',
+	'hostname' => 'localhost',
 	'username' => 'ant',
 	'password' => 'Ant1234',
 	'database' => 'pricemarkup',

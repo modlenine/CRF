@@ -728,7 +728,7 @@ if ($result->crf_status == "Open") {
             <div class="row form-group recive_cheuqe" style="display:none;">
                 <div class="col-md-6 form-group">
                     <label for="">แนบตารางวางบิล / รับเช็ค</label><br>
-                    <span><b><a id="recive_cheuqetable" href="<?=base_url('upload/').$result->crfcus_tablebill?>" target="_blank"><?= $result->crfcus_cheuqetable ?></a></b></span>
+                    <span><b><a id="recive_cheuqetable" href="<?=base_url('upload/').$result->crfcus_cheuqetable?>" target="_blank"><?= $result->crfcus_cheuqetable ?></a></b></span>
 
                 </div>
                 <div class="col-md-12 form-group">
