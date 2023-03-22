@@ -659,8 +659,20 @@
                     </div>
                 </div>
 
+                 <!-- Check Director approve 2 -->
+                 <?php 
+                    $notdisplay1 = '';
+                    if($crfex_directorapp_status2 == "Approve"){
+                        if($crfex_directorapp_username2 == $username){
+                            $notdisplay1 = 'style="display:none;"';
+                        }else{
+                            $notdisplay1 = '';
+                        }
+                    }
+                ?>
 
-                <div class="row form-group ">
+
+                <div class="row form-group" <?=$notdisplay1?>>
                     <div class="col-md-4"></div>
                     <div class="col-md-4"></div>
                     <div class="col-md-4"><button type="submit" class="btn btn-info btn-block" id="ex_directorSubmit" name="ex_directorSubmit">Submit</button></div>
@@ -696,7 +708,7 @@
 
 
                 <!-- Director apparove zone2 -->
-                <form action="{exDirectorApprove2}" method="POST" name="" class="directorApprove2" style="display:none;">
+            <form action="{exDirectorApprove2}" method="POST" name="" class="directorApprove2" style="display:none;">
             <input hidden type="text" name="check_custype_direc" id="check_custype_direc" value="{customertype}">
             <input hidden type="text" name="check_methodcurcus" id="check_methodcurcus" value="{crfex_methodcurcus}">
 
@@ -725,8 +737,19 @@
                     </div>
                 </div>
 
+                <!-- Check Director approve 1 -->
+                <?php 
+                    $notdisplay = '';
+                    if($crfex_directorapp_status == "Approve"){
+                        if($crfex_directorapp_username == $username){
+                            $notdisplay = 'style="display:none;"';
+                        }else{
+                            $notdisplay = '';
+                        }
+                    }
+                ?>
 
-                <div class="row form-group ">
+                <div class="row form-group" <?=$notdisplay?>>
                     <div class="col-md-4"></div>
                     <div class="col-md-4"></div>
                     <div class="col-md-4"><button type="submit" class="btn btn-info btn-block" id="ex_directorSubmit2" name="ex_directorSubmit2">Submit</button></div>
