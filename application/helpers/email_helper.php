@@ -211,9 +211,9 @@ function emailSaveDataTH($subject, $body, $to, $cc)
     $mail->IsSMTP();
     $mail->CharSet = "utf-8";  // ในส่วนนี้ ถ้าระบบเราใช้ tis-620 หรือ windows-874 สามารถแก้ไขเปลี่ยนได้
     $mail->SMTPDebug = 1;                                      // set mailer to use SMTP
-    $mail->Host = "mail.polymeritasia.com";  // specify main and backup server
+    $mail->Host = "mail.saleecolour.net";  // specify main and backup server
 
-    $mail->Port = 587; // พอร์ท
+    $mail->Port = 25; // พอร์ท
 
     $mail->SMTPAuth = true;     // turn on SMTP authentication
     $mail->Username = getEmailUser()->email_user;  // SMTP username
