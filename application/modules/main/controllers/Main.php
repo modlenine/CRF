@@ -1198,14 +1198,11 @@ public function history_list()
 
     public function testcode()
     {
-        $deptcodeTo = 1006;
-        $posiTo = 75;
-        $to = array();
-        foreach (getuserEmailTo($deptcodeTo, $posiTo)->result_array() as $rs) {
-            $to[] = $rs['memberemail'];
-        }
-
-        print_r($to);
+        $subject = "test email";
+        $body = "email";
+        $to = "";
+        $cc = "";
+        emailSaveDataTH($subject, $body, $to, $cc);
     }
 
 
