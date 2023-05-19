@@ -11,7 +11,7 @@ class Login_model extends CI_Model{
     date_default_timezone_set("Asia/Bangkok");
   }
 
-  public function escape_string() {
+  private function escape_string() {
     if($_SERVER['HTTP_HOST'] == "localhost"){
         return mysqli_connect("192.168.20.22", "ant", "Ant1234", "saleecolour");
     }else{

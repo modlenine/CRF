@@ -221,6 +221,7 @@ class Customers_model extends CI_Model
                     "crfcus_phone" => $this->input->post("addcus_telcontact"),
                     "crfcus_fax" => $this->input->post("addcus_faxcontact"),
                     "crfcus_email" => $this->input->post("addcus_emailcontact"),
+                    "crfcus_etax_email" => $this->input->post("addcus_etax_emailcontact"),
                     "crfcus_regiscapital" => conPrice($this->input->post("addcus_regiscost")),
                     "crfcus_companytype" => $this->input->post("crf_companytype"),
                     "crfcus_comtype2" => $this->input->post("crf_companytype2"),

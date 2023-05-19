@@ -260,6 +260,11 @@
                         <div id="alert_emailcontact"></div>
                     </div>
                     <div class="col-md-4 form-group">
+                        <label for="">e-Tax อีเมล</label>
+                        <input type="text" name="edit_etax_emailcontact" id="edit_etax_emailcontact" class="form-control form-control-sm" value="{edit_etax_contactemail}">
+                        <div id="alert_emailcontact"></div>
+                    </div>
+                    <div class="col-md-4 form-group">
                         <label for="">ทุนจดทะเบียน</label>
                         <input type="text" name="edit_regiscost" id="edit_regiscost" class="form-control form-control-sm" value="{edit_regiscapital}">
                         <div id="alert_regiscost"></div>

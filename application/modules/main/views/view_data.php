@@ -265,6 +265,10 @@ if ($result->crf_status == "Open") {
                     <input readonly type="text" name="crf_emailcontact_view" id="crf_emailcontact_view" class="form-control form-control-sm" value="<?= $result->crfcus_email ?>">
                 </div>
                 <div class="col-md-4 form-group">
+                    <label for="">e-Tax อีเมล</label>
+                    <input readonly type="text" name="crf_etax_emailcontact_view" id="crf_etax_emailcontact_view" class="form-control form-control-sm" value="<?= $result->crfcus_etax_email ?>">
+                </div>
+                <div class="col-md-4 form-group">
                     <label for="">ทุนจดทะเบียน</label>
                     <input readonly type="text" name="crf_regiscost_view" id="crf_regiscost_view" class="form-control form-control-sm" value="<?= $result->crfcus_regiscapital ?>">
                 </div>

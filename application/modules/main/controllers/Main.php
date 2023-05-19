@@ -995,6 +995,7 @@ public function history_list()
             "edit_contacttel" => getViewData($crf_id)->crfcus_phone,
             "edit_contactfax" => getViewData($crf_id)->crfcus_fax,
             "edit_contactemail" => getViewData($crf_id)->crfcus_email,
+            "edit_etax_contactemail" => getViewData($crf_id)->crfcus_etax_email,
             "edit_regiscapital" => getViewData($crf_id)->crfcus_regiscapital,
             "edit_comtype" => getViewData($crf_id)->crfcus_companytype,
             "editprimanage" => getPrimanageEdit(getViewData($crf_id)->crfcus_formno),

@@ -178,6 +178,10 @@
                         <input type="text" name="addcus_emailcontact" id="addcus_emailcontact" class="form-control form-control-sm">
                     </div>
                     <div class="col-md-4 form-group">
+                        <label for="">e-Tax อีเมล</label>
+                        <input type="text" name="addcus_etax_emailcontact" id="addcus_etax_emailcontact" class="form-control form-control-sm">
+                    </div>
+                    <div class="col-md-4 form-group">
                         <label for="">ทุนจดทะเบียน</label>
                         <input type="text" name="addcus_regiscost" id="addcus_regiscost" class="form-control form-control-sm" required>
                     </div>

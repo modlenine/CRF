@@ -198,6 +198,7 @@ class Main_model extends CI_Model
                 "crfcus_phone" => $this->input->post("crf_telcontact"),
                 "crfcus_fax" => $this->input->post("crf_faxcontact"),
                 "crfcus_email" => $this->input->post("crf_emailcontact"),
+                "crfcus_etax_email" => $this->input->post("crf_etax_emailcontact"),
                 "crfcus_regiscapital" => conPrice($this->input->post("crf_regiscost")),
                 "crfcus_companytype" => $this->input->post("crf_companytype"),
                 "crfcus_comtype2" => $this->input->post("crf_companytype2"),
@@ -349,6 +350,7 @@ class Main_model extends CI_Model
                         "crfcus_phone" => $result->crfcus_phone,
                         "crfcus_fax" => $result->crfcus_fax,
                         "crfcus_email" => $result->crfcus_email,
+                        "crfcus_etax_email" => $result->crfcus_etax_email,
                         "crfcus_regiscapital" => $result->crfcus_regiscapital,
                         "crfcus_mapurl" => $result->crfcus_mapurl,
                         "crfcus_mapfile" => $result->crfcus_mapfile,
@@ -747,6 +749,7 @@ class Main_model extends CI_Model
                     "crfcus_phone" => $this->input->post("crf_telcontact"),
                     "crfcus_fax" => $this->input->post("crf_faxcontact"),
                     "crfcus_email" => $this->input->post("crf_emailcontact"),
+                    "crfcus_etax_email" => $this->input->post("crf_etax_emailcontact"),
                     "crfcus_regiscapital" => conPrice($this->input->post("crf_regiscost")),
                     "crfcus_textmemo" => $this->input->post("crf_textmemo"),
                     "crfcus_mapurl" => $mapurl,
@@ -1799,6 +1802,7 @@ class Main_model extends CI_Model
         crf_customers.crfcus_phone,
         crf_customers.crfcus_fax,
         crf_customers.crfcus_email,
+        crf_customers.crfcus_etax_email,
         crf_customers.crfcus_regiscapital,
         crf_customers.crfcus_companytype,
         crf_company_type.crf_comname,
@@ -1863,6 +1867,7 @@ class Main_model extends CI_Model
             data_crf_telcontact = '$rs->crfcus_phone'
             data_crf_faxcontact = '$rs->crfcus_fax'
             data_crf_emailcontact = '$rs->crfcus_email'
+            data_crf_etax_emailcontact = '$rs->crfcus_etax_email'
             data_crf_regiscost = '$rs->crfcus_regiscapital'
             data_oldcfr_addresstype = '$rs->crfcus_addresstype'
             data_crf_companytype = '$rs->crfcus_companytype'
@@ -1929,6 +1934,7 @@ class Main_model extends CI_Model
             crf_customers.crfcus_phone,
             crf_customers.crfcus_fax,
             crf_customers.crfcus_email,
+            crf_customers.crfcus_etax_email,
             crf_customers.crfcus_regiscapital,
             crf_customers.crfcus_companytype,
             crf_company_type.crf_comname,
@@ -1993,6 +1999,7 @@ class Main_model extends CI_Model
                 data_crf_telcontact = '$rs->crfcus_phone'
                 data_crf_faxcontact = '$rs->crfcus_fax'
                 data_crf_emailcontact = '$rs->crfcus_email'
+                data_crf_etax_emailcontact = '$rs->crfcus_etax_email'
                 data_crf_regiscost = '$rs->crfcus_regiscapital'
                 data_oldcfr_addresstype = '$rs->crfcus_addresstype'
                 data_crf_companytype = '$rs->crfcus_companytype'
@@ -3338,6 +3345,7 @@ class Main_model extends CI_Model
                     "crfcus_phone" => $this->input->post("edit_telcontact"),
                     "crfcus_fax" => $this->input->post("edit_faxcontact"),
                     "crfcus_email" => $this->input->post("edit_emailcontact"),
+                    "crfcus_etax_email" => $this->input->post("edit_etax_emailcontact"),
                     "crfcus_regiscapital" => conPrice($this->input->post("edit_regiscost")),
                     "crfcus_companytype" => $this->input->post("crf_companytype"),
                     "crfcus_comtype2" => $this->input->post("crf_companytype2"),
@@ -3533,6 +3541,7 @@ class Main_model extends CI_Model
                         "crfcus_phone" => $this->input->post("edit_telcontact"),
                         "crfcus_fax" => $this->input->post("edit_faxcontact"),
                         "crfcus_email" => $this->input->post("edit_emailcontact"),
+                        "crfcus_etax_email" => $this->input->post("edit_etax_emailcontact"),
                         "crfcus_regiscapital" => conPrice($this->input->post("edit_regiscost")),
                         "crfcus_mapurl" => $mapUrl,
                         "crfcus_mapfile" => $resultMapFile,

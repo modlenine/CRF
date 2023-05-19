@@ -249,6 +249,11 @@
                         <div id="alert_emailcontact"></div>
                     </div>
                     <div class="col-md-4 form-group">
+                        <label for="">e-Tax อีเมล</label>
+                        <input type="text" name="crf_etax_emailcontact" id="crf_etax_emailcontact" class="form-control form-control-sm">
+                        <div id="alert_emailcontact"></div>
+                    </div>
+                    <div class="col-md-4 form-group">
                         <label for="">ทุนจดทะเบียน</label>
                         <input type="text" name="crf_regiscost" id="crf_regiscost" class="form-control form-control-sm">
                         <div id="alert_regiscost"></div>

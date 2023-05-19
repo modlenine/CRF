@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('input:radio[name="crf_type"]').change(function () {
             if ($(this).val() == 1) {
 
-                $('#crf_customercode , #crf_cusid , #crf_customername , #crf_cuscompanycreate , #crf_customertaxid , #crf_customerbranch , #crf_addressname , #crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile , #crf_customer_product , #crf_forecast , #crf_file1 ,#crf_file2 , #crf_file3 , #crf_file4 , #crf_file5 , #crf_file6 , #crf_finance_req_number , #oldCreditTerm , #crf_creditterm').val('');
+                $('#crf_customercode , #crf_cusid , #crf_customername , #crf_cuscompanycreate , #crf_customertaxid , #crf_customerbranch , #crf_addressname , #crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact ,#crf_etax_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile , #crf_customer_product , #crf_forecast , #crf_file1 ,#crf_file2 , #crf_file3 , #crf_file4 , #crf_file5 , #crf_file6 , #crf_finance_req_number , #oldCreditTerm , #crf_creditterm').val('');
 
                 $('#crf_salesreps').val($('#crf_userecodepost').val())
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $('input:checkbox').prop('checked', false);
                 $('.suboldcustomer').css('display', 'none');
             } else if ($(this).val() == 2) {
-                $('#crf_customercode , #crf_cusid , #crf_salesreps , #crf_customername , #crf_cuscompanycreate , #crf_customertaxid , #crf_customerbranch , #crf_addressname , #crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile , #crf_customer_product , #crf_forecast , #crf_file1 ,#crf_file2 , #crf_file3 , #crf_file4 , #crf_file5 , #crf_file6 ,  #crf_finance_req_number ,#oldCreditTerm').val('');
+                $('#crf_customercode , #crf_cusid , #crf_salesreps , #crf_customername , #crf_cuscompanycreate , #crf_customertaxid , #crf_customerbranch , #crf_addressname , #crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_etax_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile , #crf_customer_product , #crf_forecast , #crf_file1 ,#crf_file2 , #crf_file3 , #crf_file4 , #crf_file5 , #crf_file6 ,  #crf_finance_req_number ,#oldCreditTerm').val('');
 
                 $('#crf_customercode').prop('disabled', false);
 
@@ -76,6 +76,9 @@ $(document).ready(function () {
 
         // Email
         $('#crf_emailcontact').prop('disabled', true);
+
+        // Email
+        $('#crf_etax_emailcontact').prop('disabled', true);
 
         // ทุนจดทะเบียน
         $('#crf_regiscost').prop('disabled', true);
@@ -207,6 +210,9 @@ $(document).ready(function () {
 
                 // Email
                 $('#crf_emailcontact').prop('disabled', true);
+
+                // Email
+                $('#crf_etax_emailcontact').prop('disabled', true);
 
                 // ทุนจดทะเบียน
                 $('#crf_regiscost').prop('disabled', true);
@@ -573,7 +579,7 @@ $(document).ready(function () {
 
 
                         $('#crf_textmemo').prop('readonly', false);
-                        $('#crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile').prop('disabled', false);
+                        $('#crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_etax_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile').prop('disabled', false);
                         $('#editMapFile_addpage , #editMapUrl_addpage , #editPrimanage_addpage').css('display', '');
                         $('#editMapUrl_addpage').click(function () {
                             $('#foredit1').toggle('display', '');
@@ -724,7 +730,7 @@ $(document).ready(function () {
 
 
                     } else {
-                        $('#crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile').prop('disabled', true);
+                        $('#crf_namecontact , #crf_telcontact , #crf_faxcontact , #crf_emailcontact , #crf_etax_emailcontact , #crf_regiscost , #crf_mapurl , #crf_mapfile').prop('disabled', true);
                         $('#editMapFile_addpage , #editMapUrl_addpage , #editPrimanage_addpage').css('display', 'none');
                         $('#crf_file1 , #crf_file2 , #crf_file3 , #crf_file4 , #crf_file5 , #crf_file6 , #crf_file_person').prop('disabled', true);
 
@@ -1573,6 +1579,9 @@ $(document).ready(function () {
 
                 // Email
                 $('#crf_emailcontact').prop('disabled', false);
+
+                // Email
+                $('#crf_etax_emailcontact').prop('disabled', false);
 
                 // ทุนจดทะเบียน
                 $('#crf_regiscost').prop('disabled', false);
@@ -3365,6 +3374,7 @@ $(document).ready(function () {
         var data_crf_telcontact = $(this).attr('data_crf_telcontact');
         var data_crf_faxcontact = $(this).attr('data_crf_faxcontact');
         var data_crf_emailcontact = $(this).attr('data_crf_emailcontact');
+        var data_crf_etax_emailcontact = $(this).attr('data_crf_etax_emailcontact');
         var data_crf_regiscost = $(this).attr('data_crf_regiscost');
         var data_crf_customercode = $(this).attr('data_crf_customercode');
         var data_oldcfr_addresstype = $(this).attr('data_oldcfr_addresstype');
@@ -3572,6 +3582,7 @@ $(document).ready(function () {
         $('#crf_telcontact').val(data_crf_telcontact);
         $('#crf_faxcontact').val(data_crf_faxcontact);
         $('#crf_emailcontact').val(data_crf_emailcontact);
+        $('#crf_etax_emailcontact').val(data_crf_etax_emailcontact);
         $('#crf_regiscost').val(data_crf_regiscost);
         $('#crf_forecast').val(data_crf_forecast);
 
@@ -3722,6 +3733,7 @@ $(document).ready(function () {
         var data_crf_telcontact = $(this).attr('data_crf_telcontact');
         var data_crf_faxcontact = $(this).attr('data_crf_faxcontact');
         var data_crf_emailcontact = $(this).attr('data_crf_emailcontact');
+        var data_crf_etax_emailcontact = $(this).attr('data_crf_etax_emailcontact');
         var data_crf_regiscost = $(this).attr('data_crf_regiscost');
         var data_crf_customercode = $(this).attr('data_crf_customercode');
         var data_oldcfr_addresstype = $(this).attr('data_oldcfr_addresstype');
@@ -3909,6 +3921,7 @@ $(document).ready(function () {
         $('#crf_telcontact').val(data_crf_telcontact);
         $('#crf_faxcontact').val(data_crf_faxcontact);
         $('#crf_emailcontact').val(data_crf_emailcontact);
+        $('#crf_etax_emailcontact').val(data_crf_etax_emailcontact);
         $('#crf_regiscost').val(data_crf_regiscost);
         $('#crf_forecast').val(data_crf_forecast);
 
